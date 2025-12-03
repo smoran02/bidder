@@ -71,5 +71,5 @@ make test
     ```
 3.  Push your code:
     ```bash
-    git push origin main
+    git push
     ```
