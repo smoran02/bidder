@@ -16,14 +16,16 @@ In this activity, you will implement a C++ class that competes against your clas
 
 ## Your Task
 
-You must edit the file **\`bidder.cc\`** to implement three functions:
+You must edit the file **`bidder.cc`** to implement three functions:
 
-1.  **\`GetTeamMembers()\`**: Returns a vector of your team's names.
-2.  **\`GetStrategy()\`**: Returns a one-sentence description of your strategy.
-3.  **\`GenerateBids()\`**: The core logic. This function calculates how much to spend per round and writes the bids to a file.
+1.  **`GetTeamMembers()`**: Returns a vector of your team's names.
+2.  **`GetStrategy()`**: Returns a one-sentence description of your strategy.
+3.  **`GenerateBids()`**: The core logic. This function calculates how much to spend per round and writes the bids to a file.
 
-**NOTE: if you use an inappropriate name or strategy, your team will be
-disqualified.**
+**NOTE: if you use an inappropriate name or strategy, your team will be disqualified.**
+
+### Output
+Your output should be a file with your integer bid for each round on a separate line. The total number of lines in the file should be equal to the number of rounds, and the sum of your bids should not exceed the budget.
 
 ### Constraints
 * You must generate exactly the number of bids requested (matches the number of rounds).
@@ -34,40 +36,40 @@ disqualified.**
 
 ## How to Compile and Run
 
-We have provided a \`Makefile\` to help you compile and test your code. Open your terminal in this directory.
+We have provided a `Makefile` to help you compile and test your code.
 
-### 1. Manual Testing (The Sandbox)
-You can write your own testing code inside the \`main()\` function at the bottom of \`bidder.cc\`. This \`main\` function is for **you**. We will not use it during grading.
+### 1. Manual Testing
+You can write your own testing code inside the `main()` function at the bottom of `bidder.cc`. This `main` function is for **you**. We will not use it during the contest.
 
 To run your manual tests:
-\`\`\`bash
+```bash
 make
 ./bidder
-\`\`\`
+```
 * Use this to experiment. Print out your vector, check your math, etc.
 
 ### 2. Automated Testing (The Sanity Check)
 Before you submit, you must pass the automated sanity check. This verifies that your file output format is correct and you aren't cheating (spending more than your budget).
 
 To run the sanity check:
-\`\`\`bash
+```bash
 make test
-\`\`\`
+```
 
-* **If you see \`[FAILED]\`**: Read the error message, fix your code, and try again.
-* **If you see \`SUCCESS\`**: Your code is valid and ready for the tournament.
+* **If you see `[FAILED]`**: Read the error message, fix your code, and try again.
+* **If you see `SUCCESS`**: Your code is valid and ready for the tournament. Time to commit and push!
 
 ---
 
 ## Submission
 
-1.  Make sure \`make test\` prints **SUCCESS**.
+1.  Make sure `make test` prints **SUCCESS**.
 2.  Commit your changes:
-    \`\`\`bash
+    ```bash
     git add bidder.cc
     git commit -m "Implemented bidding logic"
-    \`\`\`
+    ```
 3.  Push your code:
-    \`\`\`bash
+    ```bash
     git push origin main
-    \`\`\`
+    ```
