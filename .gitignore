@@ -1,0 +1,5 @@
+.DS_Store
+bidder
+test_runner
+*.o
+*.txt
